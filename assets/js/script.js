@@ -177,3 +177,9 @@ window.toggleMob = function () {
     });
 
 });
+
+  const btn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    btn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+  });
+
