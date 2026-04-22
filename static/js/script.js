@@ -183,3 +183,17 @@ window.toggleMob = function () {
     btn.style.display = window.scrollY > 300 ? 'flex' : 'none';
   });
 
+
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const loader = document.getElementById("loader");
+    loader.style.opacity = "0";
+    loader.style.transition = "0.5s";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+
+  }, 1500); // 👈 1500ms = 1.5 seconds
+});

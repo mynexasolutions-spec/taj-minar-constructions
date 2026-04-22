@@ -4,6 +4,11 @@
 
 {% block content %}
 
+<div id="loader">
+  <div class="loader-text">Taj Minar</div>
+</div>
+
+
 <!-- 1. HERO -->
 <section id="hero">
   <div class="hbg">
@@ -40,8 +45,8 @@
   <div class="si">
     <div class="ag">
       <div class="aic">
-        <img src="{{ url_for('static', filename='images/islamic_images_masjid.jpeg') }}" alt="Mosque dome craftsmanship"
-          class="aim" loading="lazy">
+        <img src="{{ url_for('static', filename='images/masjid_demos.jpg') }}" alt="Mosque dome craftsmanship"
+          class="aim" loading="lazy" style="object-position: center bottom;">
         <img src="{{ url_for('static', filename='images/mindar_details.jpeg') }}" alt="Minar detail" class="aif"
           loading="lazy">
         <div class="ab"><span class="abn">20+</span><span class="abt">Years of<br>Excellence</span></div>
@@ -189,7 +194,7 @@
     <div class="pph">
       <div>
         <div class="sl" style="color:var(--gold-light);">Our Portfolio</div>
-        <h2 class="st" style="color:var(--ivory);">Featured <em style="color:var(--gold-light);">Projects</em></h2>
+        <h2 class="st" style="color:var(--dark);">Featured <em style="color:var(--gold-light);">Projects</em></h2>
       </div>
       <a href="{{ url_for('projects') }}" class="btn-outline"
         style="color:var(--gold-light);border-color:var(--gold-light);white-space:nowrap;">View All →</a>
@@ -240,7 +245,7 @@
         </div>
       </div>
 
-       <div class="pt">
+      <div class="pt">
         <img src="{{ url_for('static', filename='images/domes_1.webp') }}" alt="Minar Project" loading="lazy">
         <div class="pov"></div>
         <div class="pin">
@@ -249,7 +254,7 @@
         </div>
       </div>
 
-        <div class="pt">
+      <div class="pt lst">
         <img src="{{ url_for('static', filename='images/domes_2.jpg') }}" alt="Minar Project" loading="lazy">
         <div class="pov"></div>
         <div class="pin">
@@ -435,10 +440,10 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="subs">
         <div class="sl">Why Al-Emaar</div>
         <h2 class="st">Built on <em>Trust</em> &amp; Craft</h2>
-        <p class="sd" style="margin-bottom:2.5rem;">Our clients choose us not just for technical mastery, but for our
+        <p class="sd" style="margin-bottom:2.5rem;text-align: center;">Our clients choose us not just for technical mastery, but for our
           commitment to their vision and the sanctity of the spaces we create.</p>
         <div class="wfs">
           <div class="wf">
@@ -497,31 +502,31 @@
       <div class="mc tall"><img
           src="https://www.abirpothi.com/wp-content/uploads/2023/01/The-Asfi-Mosque-located-near-the-Bara-Imambara-in-Lucknow-India-scaled.jpg"
           alt="Masjid Lahore" loading="lazy">
-        <div class="mcp"><span>Masjid Al-Noor, Lahore</span></div>
+        <div class="mcp"></div>
       </div>
       <div class="mc wide"><img
           src="https://www.hoteldekho.com/blog/wp-content/uploads/2021/12/Mosques-in-India-6-2.jpg"
           alt="Mosque Interior" loading="lazy">
-        <div class="mcp"><span>Prayer Hall Dome — Islamabad</span></div>
+        <div class="mcp"></div>
       </div>
       <div class="mc"><img
           src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/ac/52/53/masjid-sultan-ahmad-shah.jpg?w=800&h=500&s=1"
           alt="Dome" loading="lazy">
-        <div class="mcp"><span>Grand Dome, Rawalpindi</span></div>
+        <div class="mcp"></div>
       </div>
       <div class="mc"><img src="{{ url_for('static', filename='images/minar_type_2.jpeg') }}" alt="Minar"
           loading="lazy">
-        <div class="mcp"><span>Twin Minars, Faisalabad</span></div>
+        <div class="mcp"></div>
       </div>
       <div class="mc"><img
           src="https://risemalaysia.com.my/wp-content/uploads/2022/11/Sejarah-Masjid-Negeri-Sultan-Ahmad-1.jpg"
           alt="Tile detail" loading="lazy">
-        <div class="mcp"><span>Tile Mosaic Detail</span></div>
+        <div class="mcp"></div>
       </div>
       <div class="mc"><img
           src="https://images.unsplash.com/photo-1590273089302-ebbc53986b6e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9zcXVlfGVufDB8fDB8fHww"
           alt="Arched corridor" loading="lazy">
-        <div class="mcp"><span>Arched Corridor — Madarsa</span></div>
+        <div class="mcp"></div>
       </div>
     </div>
   </div>
